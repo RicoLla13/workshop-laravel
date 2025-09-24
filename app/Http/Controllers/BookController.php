@@ -15,7 +15,7 @@ class BookController extends Controller
         // Retrieve all books
         $books = Book::all();
 
-        return view('books')->with('books', $books);
+        return view('books/index')->with('books', $books);
     }
 
     /**
@@ -23,7 +23,7 @@ class BookController extends Controller
      */
     public function create()
     {
-        //
+        return view('books/create');
     }
 
     /**
@@ -31,7 +31,18 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'pages' => 'required|int',
+            'quantity' => 'required|int'
+        ]);
+
+        // Create new post
+        Book::create($validated);
+
+        // Redirect with success message
+        return redirect()->route('books.create')->with('success', 'Book created successfully!');
+        // return redirect()->route('books');
     }
 
     /**
