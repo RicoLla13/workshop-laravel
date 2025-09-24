@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-// LEFT HERE
 // TODO-3-4 Créer le seeder "BookSeeder" --> php artisan...
 // TODO-3-5 Rajouter quelques livres
 // TODO-3-7 Exécuter le seeder --> php artisan...
