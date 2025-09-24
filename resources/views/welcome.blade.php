@@ -4,7 +4,6 @@
 <!-- TODO-2-0 Ajouter le contenu de la nouvelle vue "home" https://codepen.io/spicypaper/pen/wvemNKj et
     ajouter le lien vers la vue "home" dans la navbar -->
 
-<!-- LEFT HERE -->
 <!-- TODO-4-3 Créer une vue blade layout permettant de fournir une base pour les autres vues "views/layout/app.blade.php" -->
 <!-- TODO-4-4 Utiliser le contenu de la vue "home" pour la vue layout -->
 <!-- TODO-4-5 Adapter légèrement la vue layout en utilisant la directive blade @ yield("content") -->
@@ -14,6 +13,7 @@
 <!-- TODO-4-8 Améliorer la vue books pour afficher les livres dans un tableau https://codepen.io/spicypaper/pen/gOReEwE -->
 <!-- TODO-4-9 Ajouter le lien à la vue books dans "layout.app" -->
 
+<!-- LEFT HERE -->
 <!-- TODO-5-0 Créer un dossier "books" dans "views" afin de regrouper les vues -->
 <!-- TODO-5-1 Renommer la vue "book" en "index" (attention à adapter le contrôleur) -->
 <!-- TODO-5-2 Créer les vues manquantes afin de compléter le CRUD de "books" (create, edit, index, show) et
